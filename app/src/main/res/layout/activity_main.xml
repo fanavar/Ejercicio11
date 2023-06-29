@@ -38,6 +38,7 @@
         android:drawableLeft="@android:drawable/btn_star_big_on"
         android:drawableRight="@android:drawable/btn_star_big_on"
         android:text="Level 4 completed"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
@@ -61,10 +62,13 @@
         android:layout_height="80dp"
         android:backgroundTint="#484D50"
         android:text="Unlocked level 5"
+        android:textColor="#009688"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#009688"
+        app:strokeWidth="3dp" />
 
     <Button
         android:id="@+id/buttonMusic"
@@ -73,6 +77,7 @@
         android:backgroundTint="#58CD75"
         android:drawableLeft="@drawable/baseline_pause_circle_24"
         android:text="Music paused"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
