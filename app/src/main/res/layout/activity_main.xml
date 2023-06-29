@@ -4,62 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#3BAE57"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonPlane"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:backgroundTint="#B469DC"
         android:text="Turn off flight mode"
-        tools:drawableLeft="@drawable/baseline_airplanemode_inactive_24"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonPicture"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:drawableLeft="@drawable/baseline_airplanemode_inactive_24" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/buttonPicture"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:backgroundTint="#B6B6B6"
         android:text="Picture saved to gallery"
         android:textColor="#E83131"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="179dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonLevel"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:drawableLeft="@android:drawable/btn_star_big_on"
         android:drawableRight="@android:drawable/btn_star_big_on"
         android:text="Level 4 completed"
-        tools:layout_editor_absoluteX="223dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPicture" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonUpdate"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:backgroundTint="#FD2538"
         android:drawableLeft="@android:drawable/ic_popup_sync"
         android:text="Updating profile"
-        tools:layout_editor_absoluteX="488dp"
-        tools:layout_editor_absoluteY="58dp" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonUlocked"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/buttonUlocked"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:backgroundTint="#484D50"
         android:text="Unlocked level 5"
-        tools:layout_editor_absoluteX="488dp"
-        tools:layout_editor_absoluteY="163dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/buttonMusic"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
+        android:backgroundTint="#58CD75"
+        android:drawableLeft="@drawable/baseline_pause_circle_24"
         android:text="Music paused"
-        tools:layout_editor_absoluteX="488dp"
-        tools:layout_editor_absoluteY="290dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.567"
+        app:layout_constraintStart_toStartOf="@+id/guideline3"
+        app:layout_constraintTop_toBottomOf="@+id/buttonUlocked"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="446dp"
+        android:layout_height="318dp"
+        app:srcCompat="@drawable/andy"
+        tools:layout_editor_absoluteX="-134dp"
+        tools:layout_editor_absoluteY="136dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.6689466" />
 </androidx.constraintlayout.widget.ConstraintLayout>
